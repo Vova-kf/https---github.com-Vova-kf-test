@@ -1,0 +1,261 @@
+.section {
+
+  // .section__hero
+
+  &__hero {
+    background: #F5F5F5;
+    position: relative;
+    z-index: 1;
+  }
+
+}
+
+.container {}
+
+.hero {
+  display: flex;
+  // .hero__img
+
+  &__img {
+    position: absolute;
+    right: 71px;
+    top: -35px;
+    max-width: 880px;
+    width: 100%;
+    z-index: -1;
+
+    @media (max-width: $breakpoint1200) {
+      width: 700px;
+      right: 40px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      top: 200px;
+    }
+    @media (max-width: $breakpoint768) {
+      display: none;
+    }
+  }
+
+  // .hero__item
+
+  &__item {}
+
+  // .hero__item-text
+
+  &__item-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #69B99D;
+    margin-top: 65px;
+    background: #F8F9FE;
+    padding: 12px 24px;
+    width: 175px;
+    @media (max-width: $breakpoint768) {
+      text-align: center;
+    }
+
+  }
+
+  // .hero__item-title
+
+  &__item-title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.0025em;
+    color: #1F2744;
+    margin-top: 32px;
+    width: 605px;
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+      text-align: center;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 45px;
+      line-height: 50px;
+    }
+  }
+
+  // .hero__item-subtitle
+
+  &__item-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.0025em;
+    color: #73788C;
+    margin-top: 24px;
+    width: 500px;
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.tabs {
+
+  margin-top: 150px;
+  margin-bottom: 55px;
+  width: 740px;
+
+
+  @media (max-width: $breakpoint768) {
+    width: 100%;
+    margin-top: 100px;
+  }
+  @media (max-width: $breakpoint480) {
+    margin-top: 50px;}
+
+  &__header {
+    display: flex;
+
+    
+
+    &-item {
+
+      cursor: pointer;
+      padding: 12px 32px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.0025em;
+      color: #A6A6A6;
+
+      &.active {
+        color: #69B99D;
+      }
+    }
+  }
+
+  &__content {
+
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    background: #ffffff;
+    box-shadow: 35px 35px 65px rgba(146, 106, 120, 0.16);
+    @media (max-width: $breakpoint768) {
+      flex-flow: column wrap;
+      align-items: flex-start;
+    }
+  }
+}
+
+.active {
+  background: #FEFEFF;
+
+}
+
+.tab {
+
+  // .tab__content
+
+  &__content {
+
+    margin-right: 40px;
+    @media (max-width: $breakpoint768) {
+      flex-flow: column wrap;
+      align-items: flex-start;
+    }
+  }
+
+  // .tab__content-title
+
+  &__content-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.0025em;
+    color: #1F2744;
+margin: 0 auto;
+  }
+
+  // .tab__content-menu
+
+  &__content-menu {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.0025em;
+    color: #A6A6A6;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  // .tab__content-search
+
+  &__content-search {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.0025em;
+    color: #FFFFFF;
+    padding: 18px 48px;
+    background: #69B99D;
+    box-shadow: 0px 0px 65px rgba(105, 185, 157, 0.32);
+    cursor: pointer;
+    &:hover {
+      color: #69B99D;
+      background: #ffffff;
+      border: 1px solid #69B99D;
+    }
+  }
+}
+
+.tabs {
+
+  // .tabs__content
+
+  &__content {
+  }
+
+  // .tabs__content-item
+
+  &__content-item {@media (max-width: $breakpoint768) {
+    flex-flow: column wrap;
+   gap: 15px;
+   align-items: flex-start;
+  }
+    
+  }
+}
+.dropdown-menu {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown-toggle{
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.0025em;
+    color: #A6A6A6;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+}

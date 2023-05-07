@@ -1,0 +1,275 @@
+.section {
+
+  // .section__about
+
+  &__about {}
+}
+
+.container {}
+
+.about {
+  padding-bottom: 100px;
+
+  @media (max-width: $breakpoint992) {
+    margin-top: 50px;
+  }
+
+  // .about__items
+
+  &__items {}
+
+  // .about__item
+
+  &__item {}
+
+  // .about__item-foto
+
+  &__item-foto {}
+
+  // .about__item-text
+
+  &__item-text {}
+
+  // .about__item-title
+
+  &__item-title {}
+
+  // .about__item-subtitle
+
+  &__item-subtitle {}
+
+  // .about__item-btn
+
+  &__item-btn {}
+}
+
+.global {
+
+  // .global__title
+
+  &__title {}
+}
+
+
+.section {
+
+  // .section__about
+
+  &__about {}
+}
+
+.container {}
+
+.about {
+
+  // .about__items
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+
+    @media (max-width: $breakpoint1200) {
+      gap: 30px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  // .about__item
+
+  &__item {
+    position: relative;
+  }
+
+  // .about__item-foto
+
+  &__item-foto {
+    @media (max-width: $breakpoint768) {
+    width: 480px;
+    }
+    @media (max-width: $breakpoint480) {
+      width: 370px;
+      
+     }
+  }
+
+  // .about__item-reviews
+
+  &__item-reviews {
+    position: absolute;
+    top: -80px;
+    background: #FEFEFF;
+    box-shadow: 35px 35px 65px rgba(146, 106, 120, 0.16);
+    width: 174px;
+    height: 252px;
+    left: 96px;
+    text-align: center;
+    @media (max-width: $breakpoint768) {
+      width: 150px;
+     height: 200px;
+     left: 20px;
+     }
+  }
+
+  // .about__item-info
+
+  &__item-info {
+    position: absolute;
+    top: 400px;
+    width: 515px;
+    height: 82px;
+    display: flex;
+    background: #FFFFFF;
+    padding: 12px 23px;
+    gap: 32px;
+    right: 0;
+    @media (max-width: $breakpoint768) {
+      width: 370px;
+      top: 293px;
+      gap: 20px;
+     }
+  }
+
+  // .about__item-text
+
+  &__item-text {
+    width: 150px;
+  }
+
+  // .about__item-title
+
+  &__item-title {
+    margin-top: 16px;
+
+    @media (max-width: $breakpoint768) {
+      text-align: center;
+    }
+  }
+
+  // .about__item-subtitle
+
+  &__item-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 16px;
+    letter-spacing: 0.0025em;
+    color: #73788C;
+    padding-bottom: 48px;
+  }
+
+  // .about__item-btn
+
+  &__item-btn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.0025em;
+    color: #FEFEFF;
+    padding: 18px 48px;
+    background: #69B99D;
+    box-shadow: 24px 24px 65px rgba(81, 140, 119, 0.24);
+    &:hover {
+      color: #69B99D;
+      background: #ffffff;
+      border: 1px solid #69B99D;
+    }
+  }
+}
+
+.item {
+
+  // .item__reviews-foto
+
+  &__reviews-foto {
+    position: absolute;
+    top: -50px;
+    left: 38px;
+    @media (max-width: $breakpoint768) {
+     left: 24px;
+    }
+  }
+
+  // .item__reviews-rating
+
+  &__reviews-rating {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: 0.0025em;
+    color: #054457;
+    margin-top: 32px;
+    @media (max-width: $breakpoint768) {
+     font-size: 50px;
+     }
+  }
+
+  // .item__reviews-star
+
+  &__reviews-star {
+    margin-top: 8px;
+  }
+
+  // .item__reviews-trusted
+
+  &__reviews-trusted {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    letter-spacing: 0.0025em;
+    color: #A6A6A6;
+  }
+
+  // .item__reviews-number
+
+  &__reviews-number {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.0025em;
+    color: #054457;
+  }
+
+  // .item__info-number
+
+  &__info-number {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.0025em;
+    color: #054457;
+    @media (max-width: $breakpoint768) {
+      font-size: 34px;
+    }
+  }
+
+  // .item__info-text
+
+  &__info-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.0025em;
+    color: #A6A6A6;
+   
+  }
+}
